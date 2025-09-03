@@ -33,3 +33,20 @@ The design is parameterized, supports oversampling (16×), and is suitable for F
 
 ## 📂 Repository Structure
 
+```text
+uart-design/
+│── README.md              # Project overview
+│── report/                
+│   └── UART_Report.pdf    # Detailed project report
+│── src/                   
+│   ├── baud_gen.v         # Baud rate generator
+│   ├── uart_rx.v          # UART receiver FSM
+│   ├── uart_tx.v          # UART transmitter FSM
+│   ├── fifo.v             # TX and RX FIFOs
+│   └── uart_top.v         # Top-level integration
+│── sim/
+│   ├── uart_tb.v          # Loopback testbench
+│   └── waves/             # Waveform outputs / screenshots
+│── docs/
+│   ├── diagrams/          # FSM state diagrams, block diagrams
+│   └── notes.md           # Design notes and derivations
